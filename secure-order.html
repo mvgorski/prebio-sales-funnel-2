@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rad Web Page</title>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+  	header {
+  		padding-top: 15px;
+  		padding-bottom: 15px;
+  		background: #fff;
+  	}
+  	#intro {
+  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
+  		/*background-size: cover;*/
+  		background: #3B4E92;
+  		color: #fff;
+  		padding-top: 30px;
+  		padding-bottom: 200px;
+  	}
+  	#intro h1 {
+  		text-align: center;
+  	}
+  	#intro ul {
+  		list-style-type: none;
+  		padding: 0;
+  	}
+  	#intro ul>li {
+  		padding-left: 1.4em;
+  	}
+  	#intro ul>li:before {
+  		content: "\f00c"; /* FontAwesome Unicode */
+		font-family: FontAwesome;
+		display: inline-block;
+		margin-left: -1.4em; /* same as padding-left set on li */
+		width: 1.4em; /* same as padding-left set on li */
+  	}
+	#intro ul>li>i {
+		margin-right: 10px;
+		color: green;
+	}
+	#order {
+		position: absolute;
+		width: 100%;
+	}
+	#order .option {
+		border: 1px solid #000;
+		background: #fff;
+	}
+	#order .option .title {
+		display: block;
+		background: #4D92DF;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px;
+	}
+	#order .option .option-inner {
+		padding: 15px;
+	}
+	#order .option .option-check {
+		padding: 10px;
+		background: #E5F3FC;
+	}
+  	#guarantee {
+  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
+  		/*background-size: cover;*/
+  		background: #f3f3f3;
+  		padding-top: 300px;
+  		padding-bottom: 75px;
+  	}
+  	#bio {
+  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
+  		/*background-size: cover;*/
+  		background: #3B4E92;
+  		color: #fff;
+  		padding-top: 75px;
+  		padding-bottom: 75px;
+  	}
+  	#bio .container, #footerOffer .container {
+  		position: relative;
+  	}
+  	#bio .boo {
+  		position: absolute;
+  		right: 0;
+  		bottom: -75px;
+  	}
+  	#faq {
+  		padding-top: 30px;
+  		padding-bottom: 30px;
+  	}
+  	#faq ul {
+  		list-style-type: none;
+  		padding-left: 0;
+  	}
+  	#faq ul>li:nth-of-type(odd) {
+  		font-size: 1.3rem;
+  		color: 3B4E92;
+  	}
+  	#faq ul>li:nth-of-type(even) {
+
+  	}
+  	#footerOffer {
+  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
+  		/*background-size: cover;*/
+  		background: #3B4E92;
+  		color: #fff;
+  		padding-top: 30px;
+  		padding-bottom: 50px;
+  		margin-bottom: 75px;
+  	}
+  	#footerOffer .boo {
+  		position: absolute;
+  		left: 0;
+  		bottom: -60px;
+  	}
+  	#footerOffer h6 {
+  		position: relative;
+  		font-size: 1.5rem;
+  		line-height: 1.5;
+  		font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
+  		text-transform: uppercase;
+  	}
+	.cta {
+		background: #FC934B;
+		border-radius: 7px;
+		color: #fff;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		padding: 10px;
+	}
+	footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background: #f3f3f3;
+	}
+	
+	.line {
+		position: relative;
+	}
+	.line:after {
+		content: '';
+	    position: absolute;
+	    width: 75px;
+	    height: 2px; 
+	    background: #fff;
+	    top: 100%;
+	    left: 0;
+	}
+  </style>
+
+</head>
+<body>
+
+<header>
+	<img src="http://placehold.it/200x40" title="Gundry MD" alt="Gundry MD">
+	<a class="float-right" href="tel:1-800-852-0477">(800) 852-0477</a>
+</header>
+
+<div id="intro">
+	<div class="container">
+		<h1>Special Internet-Only Offer on<br>
+			<span>GUNDRY MD <strong>PREBIOTHRIVE</strong><sup>&trade;</sup></span>
+		</h1>
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<ul>
+					<li>Helps with weight management</li>
+					<li>Increases appetite control</li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-8">
+				<ul>
+					<li>Helps reduce cravings for sweets and junk foods</li>
+					<li>Promotes smoother digestion with less gas, bloating, &amp; discomfort</li>
+				</ul>
+			</div>
+		</div>
+		<div class="position-relative">
+			<div id="order">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="option">
+								<span class="title">Choose Option</span>
+								<div class="option-inner pa-2">
+									<img src="http://placehold.it/50x50" alt="Diet Evolution">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.</p>
+									<div class="option-check">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="option">
+								<span class="title">Choose Option</span>
+								<img src="http://placehold.it/100x100" alt="">
+							</div>
+						</div>
+						<div class="col">
+							<div class="option">
+								<span class="title">Choose Option</span>
+								<img src="http://placehold.it/100x100" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="guarantee">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-4 text-center text-sm-right">
+				<img src="http://placehold.it/100x100" alt="">
+			</div>
+			<div class="col-12 col-md-8">
+				<h2>100% Money Back Guarantee</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="bio">
+	<div class="container position-relative">
+		<div class="row">
+			<div class="col-12 col-sm-8">
+				<h3>Dr. Gundry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<img src="http://placehold.it/150x40" alt="" class="mr-2">
+				<img src="http://placehold.it/150x40" alt="" class="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			</div>
+		</div>
+		<img src="http://placehold.it/150x500" alt="" class="boo visible-sm-up">
+	</div>
+
+</div>
+
+<div id="faq">
+	<div class="container">
+		<h4>Frequently Asked Questions</h4>
+		<ul>
+			<li>Who Should Use Prebiothrive?</li>
+			<li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt.</p>
+			</li>
+			<li>How Does It Work?</li>
+			<li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt.</p>
+			</li>
+			<li>What's In It?</li>
+			<li>
+				<p>contains three unique ingredients:</p>
+				<div class="row">
+					<div class="col">
+						<img src="http://placehold.it/200x150" alt="" class="img-fluid">
+						<h5>Ingredient</h5>
+						<p>Description of this here ingredient</p>
+					</div>
+					<div class="col">
+						<img src="http://placehold.it/200x150" alt="" class="img-fluid">
+						<h5>Ingredient</h5>
+						<p>Description of this here ingredient</p>
+					</div>
+					<div class="col">
+						<img src="http://placehold.it/200x150" alt="" class="img-fluid">
+						<h5>Ingredient</h5>
+						<p>Description of this here ingredient</p>
+					</div>
+				</div>
+			</li>
+			<li>How Do I Use It?</li>
+			<li></li>
+			<li>How Safe Is Gundry Prebiothrive?</li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+
+<div id="footerOffer">
+	<div class="container position-relative">
+		<img src="http://placehold.it/150x350" class="boo d-none d-md-block" alt="">
+		<div class="col-12 col-md-8 offset-md-4">
+			<h6 class="line">Gundry MD Prebiothrive</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nos.</p>
+			<a href="#intro" class="cta">Buy Now</a>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="container text-center">
+	    <div class="row justify-content-center">
+	        <div class="col-12 col-sm-6 col-md-4 text-sm-right">
+	            <img src="http://placehold.it/200x50" alt="Gundry MD" class="img-fluid mb-4">
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4 text-sm-left">
+	            <a href="tel:1-800-892-0477">(800) 892-0477</a>
+	        </div>
+	    </div>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco.<a href="#" target="_blank">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#" target="_blank">Privacy Policy</a><br>
+	    9465 Wilshire Boulevard, Suite 300 Beverly Hills, California, 90212</p>
+	</div>
+
+</footer>
+
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>
+</body>
