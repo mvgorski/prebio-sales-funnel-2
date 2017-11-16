@@ -211,11 +211,21 @@
   		padding-left: 0;
   	}
   	#faq ul>li:nth-of-type(odd) {
-  		font-size: 1.3rem;
-  		color: #3B4E92;
+  		font-size: 1.5rem;
+  		color: #386BB5;
   	}
   	#faq ul>li:nth-of-type(even) {
 
+  	}
+  	#faq h4 {
+  		text-transform: uppercase;
+  		color: #1D2667;
+  		font-size: 2rem;
+  		line-height: 1.5;
+  		margin-bottom: 2rem;
+  	}
+  	#faq h4:after {
+  		background: #1D2667;
   	}
   	#footerOffer {
   		background: url("../img/buy-now-bg-02.jpg") no-repeat center top;
