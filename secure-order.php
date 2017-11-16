@@ -44,9 +44,13 @@
 					<div class="row">
 						<div class="col">
 							<div class="option">
-								<span class="title">Add the Book</span>
-								<div class="p-3">
-									<img src="img/diet-evolution.png" alt="Diet Evolution" class="float-left mr-3 ml-4">
+								<span class="title position-relative">
+									<span>OPTIONAL</span>
+									Add the Book
+									<div class="arrow-down"></div>
+								</span>
+								<div class="option-inner">
+									<img src="img/diet-evolution.png" alt="Diet Evolution" class="float-left mx-3 mb-4">
 									<span>Supercharge the benefits of PrebioThrive with Dr. Gundry's revolutionary diet program</span>
 									<div class="clearfix"></div>
 									<div class="option-check">
@@ -59,8 +63,8 @@
 						</div>
 						<div class="col-5">
 							<div class="option mt-0">
-								<span class="title">Choose Option</span>
-								<div class="p-3">
+								<span id="choosePack" class="title">Choose Your Package</span>
+								<div class="option-inner">
 									<div id="jars" class="row text-center">
 										<div class="col-lg">
 											<div class="jar">
@@ -82,20 +86,40 @@
 										</div>
 									</div>
 									<ul id="prices">
-										<li class="reg">Regular Price: $237.00</li>
+										<li class="reg mb-1">Regular Price $237.00</li>
 										<li class="inst">INSTANT SAVINGS: $105.00</li>
 										<li class="price">$132.00</li>
-										<li class="">(This is a one time payment)</li>
-										<li class=""><a href="#" class="cta">Buy Now</a></li>
-										<li class=""><img src="" alt="Truck">FREE SHIPPING</li>
+										<li class="recur">(This is a one time payment)</li>
+										<li class="mb-4"><a href="#" class="cta">Buy Now</a></li>
+										<li class="ship mb-0"><img src="img/ship.svg" alt="Truck" class="mr-3">FREE SHIPPING</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="option mt-6">
-								<span class="title">Subscribe &amp; Save</span>
-								<img src="http://placehold.it/100x100" alt="">
+							<div class="option mt-6 subscribe">
+								<span class="title position-relative">
+									<span>OPTIONAL</span>
+									Subscribe &amp; Save
+									<div class="arrow-down"></div>
+								</span>
+								<div class="option-inner">
+									<ul class="points">
+										<li>Great savings</li>
+										<li>Lock in low price</li>
+										<li>Guaranteed availability</li>
+										<li>Cancel anytime</li>
+									</ul>
+									<div class="option-check position-relative">
+										<input type="checkbox" id="club">
+										<label for="club">YES!</label>
+										<span class="d-block">I want to sign up for Gundry VIP CLUB and <span>Save 10%</span></span>
+										<div id="vipClub">
+											<div class="arrow-up"></div>
+											<p class="mb-0">By checking the "Subscribe" box above. You agree to receive "Prebiothrive" once per month and that your credit card will be charged the amount matching your selected package size, billed to your card as "Gundry MD" You can stop shipments anytime by calling customer service at 1-800-852-0477, from 6am to 6pm PST <br><a href="../new-terms.php" target="_blank" onclick="return !window.open(this.href, 'GUNDRYMD', 'toolbar=no, scrollbars=no, resizable=no, status=no, menubar=no, location=no, top=300, left=300, width=400, height=400')" class="terms-link">(All terms and conditions apply).</a></p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -138,7 +162,6 @@
 		</div>
 		<img src="img/gundry_photo.png" alt="Dr. Gundry" class="boo d-none d-md-block">
 	</div>
-
 </div>
 
 <div id="faq">
@@ -158,8 +181,8 @@
 				<p>PrebioThrive contains three unique ingredients:</p>
 				<div class="row">
 					<div class="col-sm">
-						<img src="img/bimuno.jpg" alt="bimuno" class="img-fluid mb-3">
-						<h5>Bimuno</h5>
+						<img src="img/gos.jpg" alt="gos" class="img-fluid mb-3">
+						<h5>GOS</h5>
 						<p>Known to reduce abdominal discomfort</p>
 					</div>
 					<div class="col-sm">
@@ -191,31 +214,33 @@
 
 <div id="footerOffer">
 	<div class="container position-relative">
-		<img src="http://placehold.it/150x350" class="boo d-none d-md-block" alt="">
-		<div class="col-12 col-md-7 offset-md-4">
+		<img src="img/prebiothrive2_noreflect.png" class="boo d-none d-lg-block" alt="prebiothrive">
+		<div class="col-12 col-lg-7 offset-lg-4">
 			<h6 class="line">Gundry MD Prebiothrive</h6>
 			<p>This formula was designed to help reduce your appetite for unhealthy foods and decrease tendencies to overeat by attacking at the source – the microbiome in your gut. A combination of powerful prebiotics feeds beneficial bacteria and starves the detrimental ones to rebalance your digestive tract, and help improve weight management.</p>
 			<a href="#intro" class="cta">Buy Now</a>
 		</div>
 	</div>
-	
 </div>
 
 <footer>
-	<div class="container text-center">
-	    <div class="row justify-content-center">
-	        <div class="col-12 col-sm-6 col-md-4 text-sm-right">
-	            <img src="http://placehold.it/200x50" alt="Gundry MD" class="img-fluid mb-4">
-	        </div>
-	        <div class="col-12 col-sm-6 col-md-4 text-sm-left">
-	            <a href="tel:1-800-892-0477">(800) 892-0477</a>
-	        </div>
-	    </div>
-	    <p>*The information on this website has not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease. &copy; Gundry MD <script>document.write(new Date().getFullYear())</script>
-. All Rights Reserved <a href="#" target="_blank">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#" target="_blank">Privacy Policy</a><br>
-	    9465 Wilshire Boulevard, Suite 300 Beverly Hills, California, 90212</p>
-	</div>
-
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 text-sm-right">
+                <img src="img/logo_color.svg" alt="Gundry MD" class="img-fluid mb-3">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-sm-left">
+                <a class="call" href="tel:1-800-892-0477">(800) 892-0477</a>
+            </div>
+        </div>
+        <p class="d-none d-sm-block">*The information on this website has not been evaluated by the Food and Drug Administration. These products are not intended to<br>
+         diagnose, treat, cure or prevent any disease. &copy; Gundry MD <script>document.write(new Date().getFullYear());</script>. All Rights Reserved <a href="#" target="_blank">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#" target="_blank">Privacy Policy</a><br>
+        9465 Wilshire Boulevard, Suite 300 Beverly Hills, California, 90212</p>
+        <p class="d-block d-sm-none">*The information on this website has not been evaluated by the Food and Drug Administration. These products are not intended to
+         diagnose, treat, cure or prevent any disease. &copy; Gundry MD <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.<br>
+         <a href="#" target="_blank">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#" target="_blank">Privacy Policy</a><br>
+        9465 Wilshire Boulevard, Suite 300 Beverly Hills, California, 90212</p>
+    </div>
 </footer>
 
 
@@ -228,6 +253,11 @@
 			$(this).addClass('selected');
 		} 
 	});
+
+	// terms hover code
+		$('.subscribe .option-check').hover(function(){
+    		$('#vipClub').toggle();
+		});
 </script>
 </body>
 </html>

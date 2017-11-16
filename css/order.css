@@ -48,26 +48,54 @@
   	    top: 100%;
   	    left: 0;
   	}
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #4A90E2;
+        position: absolute;
+        bottom: -20px;
+        left: 40%;   
+    }
+    .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #fff;
+        position: absolute;
+        top: -20px;
+        left: 40%;
+    }
   	#intro {
   		background: url("../img/header-bg-02.jpg") no-repeat center top;
   		background-size: cover;
   		/*background: #3B4E92;*/
   		color: #fff;
   		padding-top: 30px;
-  		padding-bottom: 325px;
+  		padding-bottom: 360px;
   	}
   	#intro h1 {
   		text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 2.5rem;
   	}
-  	#intro ul.points {
+    #intro h1>span {
+        font-size: 2.7rem;
+    }
+    #intro h1>span>strong {
+        font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+    }
+  	ul.points {
   		list-style-type: none;
   		padding: 0;
   	}
-  	#intro ul.points>li {
+  	ul.points>li {
   		padding-left: 40px;
   		margin-bottom: 15px;
   	}
-  	#intro ul.points>li:before {
+  	ul.points>li:before {
   		/*content: "\f00c";*/ /* FontAwesome Unicode */
 		/*font-family: FontAwesome;*/
 		content: url('../img/checkmark.svg');
@@ -98,9 +126,15 @@
 		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
 		font-size: 1.5rem;
 		border-radius: 7px 7px 0 0;
+        line-height: 1.2;
 	}
+    #order .option .title span {
+        display: block;
+        font-size: .9rem;
+    }
+    #order #choosePack {line-height: inherit;}
 	#order .option .option-inner {
-		padding: 25px 15px 15px;
+		padding: 2rem 1.5rem 1.5rem;
 	}
 	#order .option .option-check {
 		padding: 15px;
@@ -117,11 +151,35 @@
 		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
 		font-size: 1.3rem;
 	}
+    #order .option .option-check span>span {
+        color: #C90017;
+        cursor: pointer;
+    }
+    #order .option .option-check span>span:hover, #order .option .option-check span>span:focus {
+
+    }
+    .subscribe .option-check {
+        cursor:pointer;
+    }
+    #vipClub {
+        position: absolute;
+        left: 10px;
+        top: 108%;
+        background: #fff;
+        width: 230px;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 12px 24px 0 rgba(0,0,0,0.3);
+        display: none;
+        font-size: .8rem;
+        font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
+    }
 	#order .option .jar {
 		padding: 15px;
 		background: #f1f1f1;
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		cursor: pointer;
+        color: #8A8A8A;
 	}
 	#order .option .selected, #order .option .jar:hover, #order .option .jar:focus, #order .option .jar:active {
 		font-size: 1.5rem;
@@ -131,7 +189,12 @@
 	    -o-transition: all 0.3s ease;
 	    transition: all 0.3s ease;
 	    border: 2px solid #4A90E2;
+        color: #4F5458;
 	}
+    #order .cta {
+        display: block;
+        width: 100%;
+    }
 	#jars {
 		height: 130px;
 	}
@@ -139,15 +202,20 @@
 		list-style-type: none;
 		padding-left: 0;
 		text-align: center;
+        margin-bottom: 0;
 	}
 	#prices li {
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
+        letter-spacing: 1px;
 	}
 	#prices li.reg {
-
+        font-size: 1.3rem;
+        letter-spacing: 1px;
 	}
 	#prices li.inst {
-
+        color: #3B7ADB;
+        font-size: 1.3rem;
+        font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
 	}
 	#prices li.price {
 		font-size: 64px;
@@ -156,8 +224,12 @@
 		letter-spacing: 1px;
 		line-height: 1;
 	}
+    #prices li.recur {
+        font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+    }
 	#prices li.ship {
-
+        color: #8A8A8A;
 	}
   	#guarantee {
   		background: url("../img/money-back-bg-02.png") no-repeat center top;
@@ -264,14 +336,15 @@
   		background-size: cover;
   		/*background: #3B4E92;*/
   		color: #fff;
-  		padding-top: 30px;
-  		padding-bottom: 50px;
+  		padding-top: 75px;
+  		padding-bottom: 75px;
   		margin-bottom: 75px;
   	}
   	#footerOffer .boo {
   		position: absolute;
   		left: 0;
-  		bottom: -60px;
+  		bottom: -126px;
+        /*box-shadow: 0 12px 24px 0 rgba(0,0,0,0.15);*/
   	}
   	#footerOffer h6 {
   		position: relative;
@@ -286,6 +359,11 @@
   		font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
   		margin-bottom: 2rem;
   	}
+    #footerOffer .cta {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+    }
 	.cta {
 		background: linear-gradient(180deg, #FAD961 0%, #FF8038 100%);
 		border-radius: 5px;
@@ -298,7 +376,13 @@
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+        box-shadow: 0 12px 24px 0 rgba(0,0,0,0.15);
 	}
+    .cta:hover, .cta:focus {
+        background: linear-gradient(180deg, #FDC702 0%, #FF5C00 100%);
+        color: #fff;
+        text-decoration: none;
+    }
 	footer {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -306,8 +390,16 @@
 		color: #4F5458;
 		font-size: .8rem;
 	}
-	
-	
+    footer p {
+        color: #4F5458;
+        font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
+        font-size: .9rem;
+    }
+	footer a.call {
+        font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+        color: #1D2667;
+        font-size: 1.3rem;
+    }
 	@media screen and (max-width: 991px) {
 		#jars {height: auto;}
 		#bio .boo {right:-50px;}

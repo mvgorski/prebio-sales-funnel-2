@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -103,11 +103,14 @@
         color: #1D2667;
         font-size: 1.3rem;
     }
+    h3>a:hover, h3>a:focus {
+        color: #4A90E2;
+    }
     #video {
         margin-bottom: 30px;
+        box-shadow: 0 12px 24px 0 rgba(0,0,0,0.15);
     }
     #cta {
-        display: block;/* none */
         margin: 0 auto 30px;
         /*background: #FC934B;*/
         background: linear-gradient(180deg, #FAD961 0%, #FF8038 100%);
@@ -121,6 +124,12 @@
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
+        display: none;
+    }
+    #cta:hover, #cta:focus {
+        background: linear-gradient(180deg, #FDC702 0%, #FF5C00 100%);
+        color: #fff;
+        text-decoration: none;
     }
     footer {
         padding: 30px 0;
@@ -128,7 +137,10 @@
     footer p {
         color: #4F5458;
         font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
-        font-size: .9rem;
+        font-size: .8rem;
+    }
+    footer a:not('.call') {
+        color: #4A90E2;
     }
     /*  hide video controls NO SCRUBS  */
     .oo-control-bar{visibility: hidden; pointer-events: none;}
@@ -169,7 +181,7 @@
                     <h2>America's top heart surgeon has some unusual tips for better digestion</h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <a id="cta" href="">Next Step</a>
+                    <a id="cta" href="secure-order.php">Next Step</a>
                 </div>
             </div>
             <p>By Dr. Steven Gundry Oct 20, 2016</p>
@@ -180,14 +192,9 @@
 
 <footer>
     <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4 text-sm-right">
-                <img src="img/logo_color.svg" alt="Gundry MD" class="img-fluid mb-3">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 text-sm-left">
-                <h3><a href="tel:1-800-892-0477">(800) 892-0477</a></h3>
-            </div>
-        </div>
+
+        <img src="img/logo_color.svg" alt="Gundry MD" class="mb-3">
+
         <p class="d-none d-sm-block">*The information on this website has not been evaluated by the Food and Drug Administration. These products are not intended to<br>
          diagnose, treat, cure or prevent any disease. &copy; Gundry MD <script>document.write(new Date().getFullYear());</script>. All Rights Reserved <a href="#" target="_blank">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="#" target="_blank">Privacy Policy</a><br>
         9465 Wilshire Boulevard, Suite 300 Beverly Hills, California, 90212</p>
@@ -199,19 +206,38 @@
 </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/svgeezy.min.js"></script>
     <script>
-    var playerParam = {
-        pcode: '42dWgyOq26LapmzP0dkDCzEhlyfW',
-        autoplay: true,
-        debug: false,
-        playerBrandingId: '1a4519374354edeb30fda41ce0a2b33',
-        skin: {
-            config: 'gundrymd.json'
-            }
+
+        if(!$.cookie('returning')){
+            var delay = 39.68 * 60000;
+            setTimeout(function() {
+                $("#cta").css('display','block');
+            }, delay);
+            $.cookie("returning", 1, { expires : 7 });
+        }
+        else { 
+          $("#cta").css('display','block');
+        }
+        
+        // svg to png fallback
+        svgeezy.init(false, 'png');
+
+        // ooyala video
+        var playerParam = {
+            pcode: '42dWgyOq26LapmzP0dkDCzEhlyfW',
+            autoplay: true,
+            debug: false,
+            playerBrandingId: '1a4519374354edeb30fda41ce0a2b33',
+            skin: {
+                config: 'gundrymd.json'
+                }
         };
         OO.ready(function() {
         // change the second parameter (embed code) to change the video 
-        window.pp = OO.Player.create('video', 'wybzIxYzE6t56kIkKxp9Ki0KWWlgUSXk', playerParam);});
+        window.pp = OO.Player.create('video', 'wybzIxYzE6t56kIkKxp9Ki0KWWlgUSXk', playerParam);
+        });
     </script>
 </body>
 </html>
