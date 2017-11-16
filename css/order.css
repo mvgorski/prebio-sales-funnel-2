@@ -1,0 +1,274 @@
+	@font-face {
+		font-family: 'proximanova-reg';
+		src:    url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+	        	url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'proximanova-black';
+		src:    url('../fonts/proxima_nova_black-webfont.woff') format('woff'),
+	        	url('../fonts/proxima_nova_black-webfont.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'proximanova-regitalic';
+		src:    url('../fonts/proximanova-regitalic-webfont.woff') format('woff'),
+	        	url('../fonts/proximanova-regitalic-webfont.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'proximanova-ebold';
+		src:    url('../fonts/proximanova-extrabld-webfont.woff') format('woff'),
+	        	url('../fonts/proximanova-extrabld-webfont.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'proximanova-sbold';
+		src:    url('../fonts/proximanova-sbold-webfont.woff') format('woff'),
+	        	url('../fonts/proximanova-sbold-webfont.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'proximanova-light';
+		src:    url('../fonts/proximanova-light-webfont.woff') format('woff'),
+	        	url('../fonts/proximanova-light-webfont.ttf') format('truetype');
+	}
+	html, body {
+	  font-family: 'proximanova-reg', Helvetica, Arial, sans-serif;
+	}
+  	header {
+  		padding-top: 15px;
+  		padding-bottom: 15px;
+  		background: #fff;
+  	}
+  	#intro {
+  		background: url("../img/header-bg-02.jpg") no-repeat center top;
+  		background-size: cover;
+  		/*background: #3B4E92;*/
+  		color: #fff;
+  		padding-top: 30px;
+  		padding-bottom: 325px;
+  	}
+  	#intro h1 {
+  		text-align: center;
+  	}
+  	#intro ul.points {
+  		list-style-type: none;
+  		padding: 0;
+  	}
+  	#intro ul.points>li {
+  		padding-left: 40px;
+  		margin-bottom: 15px;
+  	}
+  	#intro ul.points>li:before {
+  		/*content: "\f00c";*/ /* FontAwesome Unicode */
+		/*font-family: FontAwesome;*/
+		content: url('../img/checkmark.svg');
+		display: inline-block;
+		margin-left: -40px; /* same as padding-left set on li */
+		width: 40px; /* same as padding-left set on li */
+  	}
+	#order {
+		position: absolute;
+		width: 100%;
+		color: #4F5458;
+		z-index: 2;
+	}
+	#order .option {
+		/*border: 1px solid #000;*/
+		background: #fff;
+		border-radius: 7px;
+		box-shadow: 0 12px 24px 0 rgba(0,0,0,0.15);
+		margin-top: 58px;
+	}
+	#order .option .title {
+		display: block;
+		background: #4A90E2;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px;
+		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+		font-size: 1.5rem;
+		border-radius: 7px 7px 0 0;
+	}
+	#order .option .option-inner {
+		padding: 25px 15px 15px;
+	}
+	#order .option .option-check {
+		padding: 15px;
+		background: #E4F3FC;
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+	}
+	#order .option .option-check input[type=checkbox] {
+		/*width: 40px;
+		height: 40px;*/
+		margin-right: 10px;
+	}
+	#order .option .option-check label {
+		color: #1D2667;
+		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+		font-size: 1.3rem;
+	}
+	#order .option .jar {
+		padding: 15px;
+		background: #f1f1f1;
+		font-size: 1.3rem;
+		cursor: pointer;
+	}
+	#order .option .selected, #order .option .jar:hover, #order .option .jar:focus, #order .option .jar:active {
+		font-size: 1.5rem;
+		background: #fff;
+		-webkit-transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
+	    border: 2px solid #4A90E2;
+	}
+	#jars {
+		height: 130px;
+	}
+	#prices {
+		list-style-type: none;
+		padding-left: 0;
+		text-align: center;
+	}
+	#prices li {
+		margin-bottom: 20px;
+	}
+	#prices li.reg {
+
+	}
+	#prices li.inst {
+
+	}
+	#prices li.price {
+		font-size: 64px;
+		color: #1D2667;
+		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+		letter-spacing: 1px;
+		line-height: 1;
+	}
+	#prices li.ship {
+
+	}
+  	#guarantee {
+  		background: url("../img/money-back-bg-02.png") no-repeat center top;
+  		background-size: cover;
+  		/*background: #f3f3f3;*/
+  		padding-top: 300px;
+  		padding-bottom: 75px;
+  	}
+  	#bio {
+  		background: url("../img/gundry-bg-02.jpg") no-repeat center top;
+  		background-size: cover;
+  		/*background: #3B4E92;*/
+  		color: #fff;
+  		padding-top: 75px;
+  		padding-bottom: 75px;
+  	}
+  	#bio .container, #footerOffer .container {
+  		position: relative;
+  	}
+  	#bio .boo {
+  		position: absolute;
+  		right: 0;
+  		bottom: -75px;
+  	}
+  	#bio span {
+  		display: inline-block;
+	    vertical-align: middle;
+	    text-transform: uppercase;
+	    font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+	    font-size: .9rem;
+  	}
+  	#bio h3 {
+  		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+  		font-size: 2.5rem;
+  		text-transform: uppercase;
+  		letter-spacing: 2px;
+  		margin-bottom: 1em;
+  		line-height: 1.6;
+  	}
+  	#bio p {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: .9rem;
+		font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
+  	}
+  	#bio p.big {
+  		font-size: 1.2rem;
+  		margin-bottom: 40px;
+  		margin-top: 0;
+  	}
+  	#bio hr {
+  		width: 90px;
+  		margin-left: 0;
+  		background: #fff;
+  		height: 2px;
+  	}
+  	#faq {
+  		padding-top: 30px;
+  		padding-bottom: 30px;
+  	}
+  	#faq ul {
+  		list-style-type: none;
+  		padding-left: 0;
+  	}
+  	#faq ul>li:nth-of-type(odd) {
+  		font-size: 1.3rem;
+  		color: #3B4E92;
+  	}
+  	#faq ul>li:nth-of-type(even) {
+
+  	}
+  	#footerOffer {
+  		background: url("../img/buy-now-bg-02.jpg") no-repeat center top;
+  		background-size: cover;
+  		/*background: #3B4E92;*/
+  		color: #fff;
+  		padding-top: 30px;
+  		padding-bottom: 50px;
+  		margin-bottom: 75px;
+  	}
+  	#footerOffer .boo {
+  		position: absolute;
+  		left: 0;
+  		bottom: -60px;
+  	}
+  	#footerOffer h6 {
+  		position: relative;
+  		font-size: 1.5rem;
+  		line-height: 1.5;
+  		font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
+  		text-transform: uppercase;
+  	}
+	.cta {
+		background: linear-gradient(180deg, #FAD961 0%, #FF8038 100%);
+		border-radius: 5px;
+		color: #fff;
+		font-size: 1.7rem;
+		line-height: 1.3;
+		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		padding: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background: #f3f3f3;
+	}
+	
+	.line {
+		position: relative;
+	}
+	.line:after {
+		content: '';
+	    position: absolute;
+	    width: 75px;
+	    height: 2px; 
+	    background: #fff;
+	    top: 100%;
+	    left: 0;
+	}
+	@media screen and (max-width: 991px) {
+		#jars {height: auto;}
+	}

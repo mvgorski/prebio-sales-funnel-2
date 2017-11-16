@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Order-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GundryMD_OrderPage" transform="translate(-235.000000, -210.000000)" fill-rule="nonzero" fill="#B8D436">
+            <g id="Header" transform="translate(0.000000, 60.000000)">
+                <g id="Key-Selling-Points" transform="translate(235.000000, 150.000000)">
+                    <path d="M19.4856501,0 C13.4017584,3.67468582 8.98640536,8.31000898 7.00336961,10.6364452 L2.14570665,6.88774686 L0,8.59156194 L8.39381851,17 C9.83849103,13.3550718 14.4134165,6.23155296 20,1.17046679 L19.4856501,0 Z" id="checkmark"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

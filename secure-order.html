@@ -1,163 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rad Web Page</title>
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <style>
-  	header {
-  		padding-top: 15px;
-  		padding-bottom: 15px;
-  		background: #fff;
-  	}
-  	#intro {
-  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
-  		/*background-size: cover;*/
-  		background: #3B4E92;
-  		color: #fff;
-  		padding-top: 30px;
-  		padding-bottom: 200px;
-  	}
-  	#intro h1 {
-  		text-align: center;
-  	}
-  	#intro ul {
-  		list-style-type: none;
-  		padding: 0;
-  	}
-  	#intro ul>li {
-  		padding-left: 1.4em;
-  	}
-  	#intro ul>li:before {
-  		content: "\f00c"; /* FontAwesome Unicode */
-		font-family: FontAwesome;
-		display: inline-block;
-		margin-left: -1.4em; /* same as padding-left set on li */
-		width: 1.4em; /* same as padding-left set on li */
-  	}
-	#intro ul>li>i {
-		margin-right: 10px;
-		color: green;
-	}
-	#order {
-		position: absolute;
-		width: 100%;
-	}
-	#order .option {
-		border: 1px solid #000;
-		background: #fff;
-	}
-	#order .option .title {
-		display: block;
-		background: #4D92DF;
-		color: #fff;
-		text-transform: uppercase;
-		text-align: center;
-		padding: 10px;
-	}
-	#order .option .option-inner {
-		padding: 15px;
-	}
-	#order .option .option-check {
-		padding: 10px;
-		background: #E5F3FC;
-	}
-  	#guarantee {
-  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
-  		/*background-size: cover;*/
-  		background: #f3f3f3;
-  		padding-top: 300px;
-  		padding-bottom: 75px;
-  	}
-  	#bio {
-  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
-  		/*background-size: cover;*/
-  		background: #3B4E92;
-  		color: #fff;
-  		padding-top: 75px;
-  		padding-bottom: 75px;
-  	}
-  	#bio .container, #footerOffer .container {
-  		position: relative;
-  	}
-  	#bio .boo {
-  		position: absolute;
-  		right: 0;
-  		bottom: -75px;
-  	}
-  	#faq {
-  		padding-top: 30px;
-  		padding-bottom: 30px;
-  	}
-  	#faq ul {
-  		list-style-type: none;
-  		padding-left: 0;
-  	}
-  	#faq ul>li:nth-of-type(odd) {
-  		font-size: 1.3rem;
-  		color: 3B4E92;
-  	}
-  	#faq ul>li:nth-of-type(even) {
-
-  	}
-  	#footerOffer {
-  		/*background: url("img/bg-gut.jpg") no-repeat center top;*/
-  		/*background-size: cover;*/
-  		background: #3B4E92;
-  		color: #fff;
-  		padding-top: 30px;
-  		padding-bottom: 50px;
-  		margin-bottom: 75px;
-  	}
-  	#footerOffer .boo {
-  		position: absolute;
-  		left: 0;
-  		bottom: -60px;
-  	}
-  	#footerOffer h6 {
-  		position: relative;
-  		font-size: 1.5rem;
-  		line-height: 1.5;
-  		font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
-  		text-transform: uppercase;
-  	}
-	.cta {
-		background: #FC934B;
-		border-radius: 7px;
-		color: #fff;
-		font-family: Helvetica, Arial, sans-serif;
-		font-weight: 700;
-		padding: 10px;
-	}
-	footer {
-		padding-top: 30px;
-		padding-bottom: 30px;
-		background: #f3f3f3;
-	}
-	
-	.line {
-		position: relative;
-	}
-	.line:after {
-		content: '';
-	    position: absolute;
-	    width: 75px;
-	    height: 2px; 
-	    background: #fff;
-	    top: 100%;
-	    left: 0;
-	}
-  </style>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Rad Web Page</title>
+  	<!--Bootstrap-->
+  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/order.css">
 
 </head>
 <body>
 
 <header>
-	<img src="http://placehold.it/200x40" title="Gundry MD" alt="Gundry MD">
+	<img src="img/logo_color.svg" title="Gundry MD" alt="Gundry MD">
 	<a class="float-right" href="tel:1-800-852-0477">(800) 852-0477</a>
 </header>
 
@@ -166,15 +22,15 @@
 		<h1>Special Internet-Only Offer on<br>
 			<span>GUNDRY MD <strong>PREBIOTHRIVE</strong><sup>&trade;</sup></span>
 		</h1>
-		<div class="row">
-			<div class="col-12 col-md-4">
-				<ul>
+		<div class="row mb-5">
+			<div class="col-12 col-md-5">
+				<ul class="points">
 					<li>Helps with weight management</li>
 					<li>Increases appetite control</li>
 				</ul>
 			</div>
-			<div class="col-12 col-md-8">
-				<ul>
+			<div class="col-12 col-md-7">
+				<ul class="points">
 					<li>Helps reduce cravings for sweets and junk foods</li>
 					<li>Promotes smoother digestion with less gas, bloating, &amp; discomfort</li>
 				</ul>
@@ -186,26 +42,57 @@
 					<div class="row">
 						<div class="col">
 							<div class="option">
-								<span class="title">Choose Option</span>
-								<div class="option-inner pa-2">
-									<img src="http://placehold.it/50x50" alt="Diet Evolution">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor.</p>
+								<span class="title">Add the Book</span>
+								<div class="p-3">
+									<img src="img/diet-evolution.png" alt="Diet Evolution" class="float-left mr-3 ml-4">
+									<span>Supercharge the benefits of PrebioThrive with Dr. Gundry's revolutionary diet program</span>
+									<div class="clearfix"></div>
 									<div class="option-check">
-										
+										<input type="checkbox" id="book">
+										<label for="book">YES!</label>
+										<span class="d-block">I want to add Dr. Gundry's Diet Evolution for $9.95</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="option">
+						<div class="col-5">
+							<div class="option mt-0">
 								<span class="title">Choose Option</span>
-								<img src="http://placehold.it/100x100" alt="">
+								<div class="p-3">
+									<div id="jars" class="row text-center">
+										<div class="col-12 col-lg-4">
+											<div class="jar">
+												<span>6</span><br>
+												<span>JARS</span>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4">
+											<div class="jar">
+												<span>3</span><br>
+												<span>JARS</span>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4">
+											<div class="jar">
+												<span>1</span><br>
+												<span>JAR</span>
+											</div>
+										</div>
+									</div>
+									<ul id="prices">
+										<li class="reg">Regular Price: $237.00</li>
+										<li class="inst">INSTANT SAVINGS: $105.00</li>
+										<li class="price">$132.00</li>
+										<li class="">(This is a one time payment)</li>
+										<li class=""><a href="#" class="cta">Buy Now</a></li>
+										<li class=""><img src="" alt="Truck">FREE SHIPPING</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="option">
-								<span class="title">Choose Option</span>
+							<div class="option mt-6">
+								<span class="title">Subscribe &amp; Save</span>
 								<img src="http://placehold.it/100x100" alt="">
 							</div>
 						</div>
@@ -220,7 +107,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-4 text-center text-sm-right">
-				<img src="http://placehold.it/100x100" alt="">
+				<img src="img/90-day-badge.png" alt="90 Day Guarantee">
 			</div>
 			<div class="col-12 col-md-8">
 				<h2>100% Money Back Guarantee</h2>
@@ -235,19 +122,21 @@
 <div id="bio">
 	<div class="container position-relative">
 		<div class="row">
-			<div class="col-12 col-sm-8">
-				<h3>Dr. Gundry</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-				<img src="http://placehold.it/150x40" alt="" class="mr-2">
-				<img src="http://placehold.it/150x40" alt="" class="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			<div class="col-12 col-sm-6">
+				<h3 class="line">Dr. Gundry</h3>
+				<p class="big">Dr. Steven Gundry, MD is one of the world's most celebrated pediatric heart surgeons, and the author of the best-selling book "Dr. Gundry's Diet Evolution." He is the director of the International Heart &amp; Lung Institute in Palm Springs, CA, and the founder / director of the Center for Restorative Medicine in Palm Springs and Santa Barbara.</p>
+			</div>
+			<div class="col-12 col-sm-7">
+				<img src="img/cw_horizontal_white.png" alt="Charity Water" class="mr-4">
+				<img src="img/cw-100.png" alt="Charity Water 100%" class="mr-4">
+				<span>100% of Donations<br>
+					Go Straight to<br>
+				Those in Need</span>
+				<hr>
+				<p>A portion of the proceeds from every Gundry MD purchase is donated to charity:water,<br> which provides safe, clean drinking water to people in developing countries.</p>
 			</div>
 		</div>
-		<img src="http://placehold.it/150x500" alt="" class="boo visible-sm-up">
+		<img src="img/gundry_photo.png" alt="Dr. Gundry" class="boo visible-sm-up">
 	</div>
 
 </div>
@@ -331,7 +220,15 @@
 
 
 <!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	$('.jar').click(function() {
+		if (!$(this).hasClass('selected')) {
+			$('.jar').removeClass('selected');
+			$(this).addClass('selected');
+		} 
+	});
+</script>
 </body>
 </html>
 </body>
