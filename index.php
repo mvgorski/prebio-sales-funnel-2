@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rad Web Page</title>
-  <!--Bootstrap-->
+  <title>CutYourCravings.com</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.css" />
   <style>
@@ -12,16 +11,6 @@
       font-family: 'proximanova-reg';
       src:    url('fonts/proximanova-reg-webfont.woff') format('woff'),
               url('fonts/proximanova-reg-webfont.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'proximanova-black';
-      src:    url('fonts/proxima_nova_black-webfont.woff') format('woff'),
-              url('fonts/proxima_nova_black-webfont.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'proximanova-regitalic';
-      src:    url('fonts/proximanova-regitalic-webfont.woff') format('woff'),
-              url('fonts/proximanova-regitalic-webfont.ttf') format('truetype');
     }
     @font-face {
       font-family: 'proximanova-ebold';
@@ -93,18 +82,6 @@
         font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
         font-size: 1.3rem;
         margin-bottom: 40px;
-    }
-    h3 {
-        line-height: 1;
-        margin-bottom: 1rem;
-    }
-    h3>a {
-        font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
-        color: #1D2667;
-        font-size: 1.3rem;
-    }
-    h3>a:hover, h3>a:focus {
-        color: #4A90E2;
     }
     #video {
         margin-bottom: 30px;

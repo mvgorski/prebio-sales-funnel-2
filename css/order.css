@@ -36,6 +36,14 @@
   		padding-bottom: 15px;
   		background: #fff;
   	}
+    header a {
+        font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
+        letter-spacing: 1px;
+        color: #1D2667;
+    }
+    header a:hover, header a:focus {
+        color: #4780C2;
+    }
   	.line {
   		position: relative;
   	}
@@ -150,7 +158,13 @@
 		color: #1D2667;
 		font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
 		font-size: 1.3rem;
+        cursor: pointer;
 	}
+    #order .option .option-check label span {
+        font-family: 'proximanova-reg', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        color: #4F5458;
+    }
     #order .option .option-check span>span {
         color: #C90017;
         cursor: pointer;
@@ -395,10 +409,16 @@
         font-family: 'proximanova-light', Helvetica, Arial, sans-serif;
         font-size: .9rem;
     }
+    footer a {
+        color: #4780C2;
+    }
 	footer a.call {
         font-family: 'proximanova-sbold', Helvetica, Arial, sans-serif;
         color: #1D2667;
         font-size: 1.3rem;
+    }
+    footer a.call:hover, footer a.call:focus {
+        color: #4780C2;
     }
 	@media screen and (max-width: 991px) {
 		#jars {height: auto;}

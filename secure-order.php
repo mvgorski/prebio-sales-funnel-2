@@ -3,19 +3,27 @@
 <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Rad Web Page</title>
-  	<!--Bootstrap-->
+  	<title>Prebiothrive Secure Order</title>
   	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/order.css">
 
 </head>
+<!-- Google Tag Manager GUNDRY -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M266MH');</script>
+<!-- End Google Tag Manager -->
 <body>
-
+	<!-- Google Tag Manager (noscript) GUNDRY -->
+	    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M266MH"
+	    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 <header>
-	<div class="container-fluid">
+	<div class="container">
 		<img src="img/logo_color.svg" title="Gundry MD" alt="Gundry MD">
-		<a class="float-right" href="tel:1-800-852-0477">(800) 852-0477</a>
+		<a class="float-right" href="tel:1-800-852-0477"><img src="img/phone.svg" alt="phone" class="mr-2">(800) 852-0477</a>
 	</div>
 </header>
 
@@ -54,9 +62,10 @@
 									<span>Supercharge the benefits of PrebioThrive with Dr. Gundry's revolutionary diet program</span>
 									<div class="clearfix"></div>
 									<div class="option-check">
-										<input type="checkbox" id="book">
-										<label for="book">YES!</label>
-										<span class="d-block">I want to add Dr. Gundry's Diet Evolution for $9.95</span>
+										<label for="book">
+											<input type="checkbox" id="book" name="book"> YES!
+											<span class="d-block">I want to add Dr. Gundry's Diet Evolution for $9.95</span>
+										</label>
 									</div>
 								</div>
 							</div>
@@ -67,31 +76,33 @@
 								<div class="option-inner">
 									<div id="jars" class="row text-center">
 										<div class="col-lg">
-											<div class="jar">
+											<div id="jar6" class="jar">
 												<span>6</span><br>
 												<span>JARS</span>
 											</div>
 										</div>
 										<div class="col-lg">
-											<div class="jar">
+											<div id="jar3" class="jar selected">
 												<span>3</span><br>
 												<span>JARS</span>
 											</div>
 										</div>
 										<div class="col-lg">
-											<div class="jar">
+											<div id="jar1" class="jar">
 												<span>1</span><br>
 												<span>JAR</span>
 											</div>
 										</div>
 									</div>
 									<ul id="prices">
-										<li class="reg mb-1">Regular Price $237.00</li>
-										<li class="inst">INSTANT SAVINGS: $105.00</li>
+										<li class="reg mb-1">Regular Price <span>$237.00</span></li>
+										<li class="inst">INSTANT SAVINGS: <span>$105.00</span></li>
 										<li class="price">$132.00</li>
 										<li class="recur">(This is a one time payment)</li>
-										<li class="mb-4"><a href="#" class="cta">Buy Now</a></li>
-										<li class="ship mb-0"><img src="img/ship.svg" alt="Truck" class="mr-3">FREE SHIPPING</li>
+										<li class="mb-4">
+											<a id="cta" href="http://gundrymd.com/cmd.php?pid=dbee7a518200490a810e71660f51bd68&bn=1&clear=1" class="cta" target="_blank">Buy Now</a>
+										</li>
+										<li class="ship mb-0"><img src="img/ship.svg" alt="Truck" class="mr-3"><span>FREE SHIPPING</span></li>
 									</ul>
 								</div>
 							</div>
@@ -111,13 +122,14 @@
 										<li>Cancel anytime</li>
 									</ul>
 									<div class="option-check position-relative">
-										<input type="checkbox" id="club">
-										<label for="club">YES!</label>
-										<span class="d-block">I want to sign up for Gundry VIP CLUB and <span>Save 10%</span></span>
-										<div id="vipClub">
-											<div class="arrow-up"></div>
-											<p class="mb-0">By checking the "Subscribe" box above. You agree to receive "Prebiothrive" once per month and that your credit card will be charged the amount matching your selected package size, billed to your card as "Gundry MD" You can stop shipments anytime by calling customer service at 1-800-852-0477, from 6am to 6pm PST <br><a href="../new-terms.php" target="_blank" onclick="return !window.open(this.href, 'GUNDRYMD', 'toolbar=no, scrollbars=no, resizable=no, status=no, menubar=no, location=no, top=300, left=300, width=400, height=400')" class="terms-link">(All terms and conditions apply).</a></p>
-										</div>
+										<label for="club">
+											<input type="checkbox" id="club" name="club"> YES!
+											<span class="d-block">I want to sign up for Gundry VIP CLUB and <span>Save 10%</span></span>
+											<div id="vipClub">
+												<div class="arrow-up"></div>
+												<p class="mb-0">By checking the "Subscribe" box above. You agree to receive "Prebiothrive" once per month and that your credit card will be charged the amount matching your selected package size, billed to your card as "Gundry MD" You can stop shipments anytime by calling customer service at 1-800-852-0477, from 6am to 6pm PST <br><a href="../new-terms.php" target="_blank" onclick="return !window.open(this.href, 'GUNDRYMD', 'toolbar=no, scrollbars=no, resizable=no, status=no, menubar=no, location=no, top=300, left=300, width=400, height=400')" class="terms-link">(All terms and conditions apply).</a></p>
+											</div>
+										</label>
 									</div>
 								</div>
 							</div>
@@ -169,12 +181,10 @@
 		<h4 class="line">Frequently Asked Questions</h4>
 		<ul>
 			<li>Who Should Use Prebiothrive?</li>
-			<li>
-				<p>We work hard to formulate the most advanced products on the market. Our 90-Day Customer Satisfaction Guarantee is designed to give you ample opportunity to experience optimal results from your product, completely risk-free.</p>
+			<li><p>We work hard to formulate the most advanced products on the market. Our 90-Day Customer Satisfaction Guarantee is designed to give you ample opportunity to experience optimal results from your product, completely risk-free.</p>
 			</li>
 			<li>How Does It Work?</li>
-			<li>
-				<p>Our breakthrough formula uses a potent combination of prebiotics to support the “good” bacteria in your gut by supplying the nutrition to help them thrive. At the same time, the formula helps reduce the number – and impact – of the “bad” bacteria. The result is a healthier digestive tract, feelings of increased energy, and a healthier appetite to support better metabolism.</p>
+			<li><p>Our breakthrough formula uses a potent combination of prebiotics to support the “good” bacteria in your gut by supplying the nutrition to help them thrive. At the same time, the formula helps reduce the number – and impact – of the “bad” bacteria. The result is a healthier digestive tract, feelings of increased energy, and a healthier appetite to support better metabolism.</p>
 			</li>
 			<li>What's In It?</li>
 			<li>
@@ -201,8 +211,7 @@
 			<li>How Do I Use It?</li>
 			<li><p>Simply mix 1 scoop into any beverage and drink, 2 – 3 times a day.</p></li>
 			<li>How Safe Is Gundry Prebiothrive? Are There Any Side Effects?</li>
-			<li>
-				<p>Gundry PrebioThrive contains only 100% natural and safe ingredients. The formula is tested for safety, quality, and purity at an independent, 3rd-party facility. There are NO reported side-effects. However, as a physician I recommend consulting with your own health care provider before beginning any new program.</p>
+			<li><p>Gundry PrebioThrive contains only 100% natural and safe ingredients. The formula is tested for safety, quality, and purity at an independent, 3rd-party facility. There are NO reported side-effects. However, as a physician I recommend consulting with your own health care provider before beginning any new program.</p>
 			</li>
 			<li>How Many Bottles Should I Order?</li>
 			<li><p>The most popular order for new customers is the 3 jar package, and that's what I recommend to start with. However, because we have many repeat customers, we offer the 6 jar package so you can take advantage of even deeper discounts.</p></li>
@@ -243,21 +252,12 @@
     </div>
 </footer>
 
-
-<!--jQuery-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/book_subscribe.js"></script>
+<script src="js/svgeezy.min.js"></script>
 <script>
-	$('.jar').click(function() {
-		if (!$(this).hasClass('selected')) {
-			$('.jar').removeClass('selected');
-			$(this).addClass('selected');
-		} 
-	});
-
-	// terms hover code
-		$('.subscribe .option-check').hover(function(){
-    		$('#vipClub').toggle();
-		});
+	// svg to png fallback
+	svgeezy.init(false, 'png');
 </script>
 </body>
 </html>
