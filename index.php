@@ -149,16 +149,14 @@
 
     <main>
         <div class="container">
-            <div id="video">
-                <!-- <img src="http://placehold.it/1200x600" class="img-fluid" alt=""> -->
-            </div>
+            <div id="video"></div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-8">
                     <h1>Win the War Inside Your <span>Stomach</span></h1>
                     <h2>America's top heart surgeon has some unusual tips for better digestion</h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <a id="cta" href="secure-order.php">Next Step</a>
+                    <a id="cta" href="assessment.php">Next Step</a>
                 </div>
             </div>
             <p>By Dr. Steven Gundry Oct 20, 2016</p>
