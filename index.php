@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CutYourCravings.com</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/gh-bs.min.css">
+  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.css" />
+  <link rel="icon" href="../favicon.ico">
   <style>
     @font-face {
       font-family: 'proximanova-reg';
@@ -210,8 +212,8 @@
                 }
         };
         OO.ready(function() {
-        // change the second parameter (embed code) to change the video 
-        window.pp = OO.Player.create('video', 'wybzIxYzE6t56kIkKxp9Ki0KWWlgUSXk', playerParam);
+            // change the second parameter (embed code) to change the video 
+            window.pp = OO.Player.create('video', 'wybzIxYzE6t56kIkKxp9Ki0KWWlgUSXk', playerParam);
         });
     </script>
 </body>
